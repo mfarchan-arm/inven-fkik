@@ -18,6 +18,7 @@
                     $("#commodity_location_id").html(data.data.commodity_location_id)
                     $("#name").html(data.data.name)
                     $("#brand").val(data.data.brand)
+                    $("#material").html(data.data.material)
                     $("#school_operational_assistance_id").html(data.data.school_operational_assistance_id)
                     $("#quantity").val(data.data.quantity)
                     $("#unit").val(data.data.unit)

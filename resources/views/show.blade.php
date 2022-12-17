@@ -31,6 +31,13 @@
               <td>:</td>
               <td id="commodity_location_id"></td>
             </tr>
+            <tr>
+              <td>
+                <b>Bahan</b>
+              </td>
+              <td>:</td>
+              <td id="material"></td>
+            </tr>
           </table>
         </div>
         <hr>
