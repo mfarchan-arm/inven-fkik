@@ -15,6 +15,9 @@
             <li class="nav-item dropdown {{ Request::segment(2) === 'barang' ? 'active' : '' }}">
                 <a href="{{ route('barang.index') }}" class="nav-link"><i class="fas fa-columns"></i> <span>Data Barang</span></a>
             </li>
+            <li class="nav-item dropdown {{ Request::segment(2) === 'bahan' ? 'active' : '' }}">
+                <a href="{{ route('bahan.index') }}" class="nav-link"><i class="fas fa-columns"></i> <span>Data Bahan</span></a>
+            </li>
             <li class="nav-item dropdown {{ Request::segment(2) === 'vendor' ? 'active' : '' }}">
                 <a class="nav-link" href="{{ route('asal-barang.index') }}"><i class="far fa-square"></i> <span>Data Asal Barang</span></a>
             </li>

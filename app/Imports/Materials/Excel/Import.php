@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Imports\Commodities\Excel;
+namespace App\Imports\Materials\Excel;
 
-use App\Commodity;
+use App\Material;
 use App\CommodityLocation;
 use App\SchoolOperationalAssistance;
 use Carbon\Carbon;
@@ -22,7 +22,7 @@ class Import implements ToModel, WithHeadingRow
         $commodity_location = CommodityLocation::where('name', $row['lokasi'])->first();
         $school_operational = SchoolOperationalAssistance::where('name', $row['asal_perolehan'])->first();
         // dd($school_operational);
-        return new Commodity([
+        return new Material([
             'item_code' => $row['kode_barang'],
             'name' => $row['nama_barang'],
             'brand' => $row['merek'],

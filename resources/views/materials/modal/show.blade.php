@@ -1,5 +1,5 @@
 <!-- Modal -->
-<div class="modal fade" id="show_commodity" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal fade" id="show_material" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
@@ -11,7 +11,7 @@
       <div class="modal-body">
         <div class="row">
           <div class="col-lg-12">
-            <label for="item_code"><b>Kode Barang</b></label>
+            <label for="item_code"><b>Kode Bahan</b></label>
             <input type="text" name="" class="form-control" id="item_code" placeholder="" disabled>
           </div>
         </div>
@@ -20,7 +20,7 @@
           <table class="table">
             <tr>
               <td style="width: 145px;">
-                <b>Nama Barang</b>
+                <b>Nama Bahan</b>
               </td>
               <td style="width: 20px;">:</td>
               <td id="name"></td>

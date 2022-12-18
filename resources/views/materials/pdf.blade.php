@@ -23,19 +23,19 @@
   <table>
   <tr>
     <td>
-      @foreach($commodities as $key => $commodity)
+      @foreach($materials as $key => $material)
       <table class="center" border="1" cellpadding="0" cellspacing="0">
         <tr>
           <td rowspan="3"><img src="assets/img/logounib.png" width="75px"></td>
           <td colspan="2">{{$sekolah}}</td>
         </tr>
         <tr>
-          <th>Kode Barang</th>
-          <td>{{ $commodity->item_code }}</td>
+          <th>Kode Bahan</th>
+          <td>{{ $material->item_code }}</td>
         </tr>
         <tr>
           <th>Nama Bahan</th>
-          <td>{{ $commodity->name }}</td>
+          <td>{{ $material->name }}</td>
         </tr>
       </table>
       <br>

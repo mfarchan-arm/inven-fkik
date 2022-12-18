@@ -27,11 +27,11 @@
     </tr>
     <tr>
       <th>Kode Barang</th>
-      <td>{{ $commodity->item_code }}</td>
+      <td>{{ $material->item_code }}</td>
     </tr>
     <tr>
-      <th>Nama Barang</th>
-      <td>{{ $commodity->name }}</td>
+      <th>Nama Bahan</th>
+      <td>{{ $material->name }}</td>
     </tr>
   </table>
 </body>

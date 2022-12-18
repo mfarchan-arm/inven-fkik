@@ -6,7 +6,7 @@
 
             $.ajax({
                 type: "GET",
-                url: "commodities/json/" + id,
+                url: "materials/json/" + id,
                 data: {
                     id: id,
                     _token: token
@@ -26,13 +26,13 @@
             })
         })
 
-        $("form[name='commodity_create']").submit(function(e) {
+        $("form[name='material_create']").submit(function(e) {
             e.preventDefault();
             let token = $("input[name=_token]").val();
 
             $.ajax({
                 type: "POST",
-                url: "commodities/json",
+                url: "materials/json",
                 data: {
                     _token: token,
                     school_operational_assistance_id: $("#school_operational_assistance_id_create").val(),
@@ -85,7 +85,7 @@
             $("#swal-update-button").attr("data-id", id);
 
             $.ajax({
-                url: "commodities/json/" + id + "/edit",
+                url: "materials/json/" + id + "/edit",
                 type: "GET",
                 data: {
                     id: id,
@@ -119,7 +119,7 @@
             let description = $("#description_edit").val();
 
             $.ajax({
-                url: "commodities/json/" + id,
+                url: "materials/json/" + id,
                 type: "PUT",
                 data: {
                     _token: token,
@@ -179,7 +179,7 @@
                     let id = $(this).data("id");
                     let token = $("input[name=_token]").val();
                     $.ajax({
-                        url: "commodities/json/" + id,
+                        url: "materials/json/" + id,
                         type: "DELETE",
                         data: {
                             id: id,

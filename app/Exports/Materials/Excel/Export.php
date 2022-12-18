@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Exports\Commodities\Excel;
+namespace App\Exports\Materials\Excel;
 
-use App\Commodity;
+use App\Material;
 use Maatwebsite\Excel\Concerns\FromCollection;
 use Maatwebsite\Excel\Concerns\ShouldAutoSize;
 use Maatwebsite\Excel\Concerns\WithHeadings;
@@ -15,10 +15,10 @@ class Export implements FromCollection, WithHeadings, ShouldAutoSize
      */
     public function collection()
     {
-        $commodities = Commodity::all();
+        $materials = Material::all();
 
         return collect([
-            $this->customProcessDataCommoditiesToExcel($commodities)
+            $this->customProcessDataMaterialsToExcel($materials)
         ]);
     }
 
@@ -26,8 +26,8 @@ class Export implements FromCollection, WithHeadings, ShouldAutoSize
     {
         return [
             'No.',
-            'Kode Barang',
-            'Nama Barang',
+            'Kode Bahan',
+            'Nama Bahan',
             'Merek',
             'Asal Perolehan',
             'Ruangan',
@@ -50,7 +50,7 @@ class Export implements FromCollection, WithHeadings, ShouldAutoSize
         ];
     }
 
-    public function customProcessDataCommoditiesToExcel($model)
+    public function customProcessDataMaterialsToExcel($model)
     {
         foreach ($model as $key => $commodity) {
             $data[$key]['no'] = $key + 1;

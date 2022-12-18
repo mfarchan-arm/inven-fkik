@@ -119,8 +119,10 @@
 
                                     </div>
                                     <div class="form-outline mb-4">
+                                        <label for="time_in">Jam Masuk</label>
                                         <input type="datetime-local" id="time_in" name="time_in" class="form-control"
                                             required />
+
                                     </div>
 
                                     <button type="submit" class="btn btn-primary btn-block mb-4">

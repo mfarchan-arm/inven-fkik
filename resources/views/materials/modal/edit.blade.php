@@ -1,5 +1,5 @@
 <!-- Modal -->
-<div class="modal fade" id="edit_commodity" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal fade" id="edit_material" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
@@ -9,12 +9,12 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form name="commodity_edit">
+                <form name="material_edit">
                     @csrf
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="form-group">
-                                <label for="item_code_edit">Kode Barang</label>
+                                <label for="item_code_edit">Kode Bahan</label>
                                 <input type="text" name="item_code_edit" class="form-control" id="item_code_edit">
                             </div>
                         </div>
@@ -35,7 +35,7 @@
                     <div class="row">
                         <div class="col-lg-4">
                             <div class="form-group">
-                                <label for="name_edit">Nama Barang</label>
+                                <label for="name_edit">Nama Bahan</label>
                                 <input type="text" class="form-control" id="name_edit">
                             </div>
                         </div>
@@ -46,6 +46,7 @@
                                 <input type="text" class="form-control" id="brand_edit">
                             </div>
                         </div>
+
 
                         <div class="col-lg-4">
                             <div class="form-group">

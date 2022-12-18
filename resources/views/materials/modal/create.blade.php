@@ -1,5 +1,5 @@
 <!-- Modal -->
-<div class="modal fade" id="commodity_create_modal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal fade" id="material_create_modal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
@@ -9,7 +9,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <form name="commodity_create">
+        <form name="material_create">
           @csrf
           <div class="row">
             <div class="col-lg-6">
@@ -35,7 +35,7 @@
           <div class="row">
             <div class="col-lg-4">
               <div class="form-group">
-                <label for="name">Nama Barang</label>
+                <label for="name">Nama Bahan</label>
                 <input type="text" class="form-control" id="name_create">
               </div>
             </div>
@@ -47,7 +47,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4">
+            <div class="col-lg-3">
               <div class="form-group">
                 <label for="location">Ruangan</label>
                 <select class="custom-select" id="commodity_location_id_create">
