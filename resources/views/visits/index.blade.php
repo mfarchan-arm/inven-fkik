@@ -5,10 +5,10 @@
         <div class="row">
             <div class="col-lg-12">
 
-                {{-- <a href="{{ route('excel.kunjungan.export') }}" class="btn btn-success float-right mt-3 mx-3"
+                <a href="{{ route('excel.kunjungan.export') }}" class="btn btn-success float-right mt-3 mx-3"
                     data-toggle="tooltip" title="Export Excel">
                     <i class="fas fa-fw fa-file-excel"></i>
-                </a> --}}
+                </a>
 
             </div>
         </div>

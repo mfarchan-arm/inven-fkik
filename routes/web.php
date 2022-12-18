@@ -24,8 +24,13 @@ Route::group(['prefix' => 'auth'], function () {
 Route::group(['prefix' => 'excel', 'as' => 'excel.barang.', 'middleware' => 'auth'], function () {
     Route::group(['prefix' => 'barang'], function () {
         Route::get('/export', 'Commodities\CommodityExportImportController@export')->name('export');
-        // Route::get('/export', 'Commodities\CommodityExportImportController@export_kunjungan')->name('export.kunjungan');
+        Route::get('/export-kunjungan', 'Visits\VisitExportController@export')->name('export.kunjungan');
         Route::post('/import', 'Commodities\CommodityExportImportController@import')->name('import');
+    });
+});
+Route::group(['prefix' => 'excel', 'as' => 'excel.kunjungan.', 'middleware' => 'auth'], function () {
+    Route::group(['prefix' => 'kunjungan'], function () {
+        Route::get('/export-kunjungan', 'Visits\VisitExportController@export')->name('export');
     });
 });
 
