@@ -16,6 +16,7 @@
 <script src="{{ url('assets/js/jquery.nicescroll.min.js') }}"></script>
 <script src="{{ url('assets/js/moment.min.js') }}"></script>
 <script src="{{ url('assets/js/fkik.js') }}"></script>
+<script src="{{ url('assets/js/bootstrap-timepicker.min.js') }}"></script>
 
 <!-- JS Libraies -->
 <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>

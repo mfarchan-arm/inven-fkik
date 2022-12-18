@@ -21,6 +21,9 @@
             <li class="nav-item dropdown {{ Request::segment(2) === 'ruang' ? 'active' : '' }}">
                 <a href="{{ route('ruang.index') }}" class="nav-link"><i class="fas fa-th"></i> <span>Data Ruangan</span></a>
             </li>
+            <li class="nav-item dropdown {{ Request::segment(2) === 'pengunjung' ? 'active' : '' }}">
+                <a href="{{ route('kunjungan.index') }}" class="nav-link"><i class="fas fa-person-booth"></i> <span>Data Kunjungan</span></a>
+            </li>
         </ul>
 
         <div class="mt-4 mb-4 p-3 hide-sidebar-mini">

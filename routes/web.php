@@ -24,6 +24,7 @@ Route::group(['prefix' => 'auth'], function () {
 Route::group(['prefix' => 'excel', 'as' => 'excel.barang.', 'middleware' => 'auth'], function () {
     Route::group(['prefix' => 'barang'], function () {
         Route::get('/export', 'Commodities\CommodityExportImportController@export')->name('export');
+        // Route::get('/export', 'Commodities\CommodityExportImportController@export_kunjungan')->name('export.kunjungan');
         Route::post('/import', 'Commodities\CommodityExportImportController@import')->name('import');
     });
 });
@@ -42,8 +43,14 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::resource('/barang', 'Commodities\CommodityController');
     Route::resource('/asal-barang', 'SchoolOperationalAssistances\SchoolOperationalAssistance');
     Route::resource('/ruang', 'CommodityLocations\CommodityLocationController');
+    Route::resource('/kunjungan', 'Visits\Visit');
 
     Route::resource('/commodities/json', 'Commodities\Ajax\CommodityAjaxController');
     Route::resource('/school-operational/json', 'SchoolOperationalAssistances\Ajax\SchoolOperationalAssistanceAjaxController');
     Route::resource('/commodity-locations/json', 'CommodityLocations\Ajax\CommodityLocationAjaxController');
+    Route::resource('/kunjungan/json', 'Visits\Ajax\VisitAjaxController');
 });
+
+//Visitor
+Route::get('/pengunjung', 'VisitController@index')->name('pengunjung');
+Route::post('/pengunjung', "VisitController@store")->name('pengunjung.store');

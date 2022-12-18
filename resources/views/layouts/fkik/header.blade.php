@@ -16,6 +16,7 @@
     <!-- Template CSS -->
     <link rel="stylesheet" href="{{ url('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ url('assets/css/components.css') }}">
+    <link rel="stylesheet" href="{{ url('assets/css/bootstrap-timepicker.min.css') }}">
     
     <link rel="shortcut icon" href="../assets/img/logounib.png" type="image/x-icon">
     <livewire:styles></livewire:styles>
