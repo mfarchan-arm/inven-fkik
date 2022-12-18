@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
+Route::get('/register', function () {
+    return view('auth.register');
+});
+
 Route::group(['prefix' => 'auth'], function () {
     Auth::routes();
 });
@@ -64,7 +68,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::resource('/kunjungan', 'Visits\Visit');
 
     Route::resource('/commodities/json', 'Commodities\Ajax\CommodityAjaxController');
-    Route::resource('/materials/json', 'Materials\Ajax\MaterialsAjaxController');
+    Route::resource('/materials/json', 'Materials\Ajax\MaterialAjaxController');
     Route::resource('/school-operational/json', 'SchoolOperationalAssistances\Ajax\SchoolOperationalAssistanceAjaxController');
     Route::resource('/commodity-locations/json', 'CommodityLocations\Ajax\CommodityLocationAjaxController');
     Route::resource('/kunjungan/json', 'Visits\Ajax\VisitAjaxController');

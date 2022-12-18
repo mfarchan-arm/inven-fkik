@@ -14,7 +14,7 @@
           <div class="row">
             <div class="col-lg-6">
               <div class="form-group">
-                <label for="item_code">Kode Barang</label>
+                <label for="item_code">Kode Bahan</label>
                 <input type="text" name="item_code" class="form-control" id="item_code_create">
               </div>
             </div>
@@ -78,12 +78,12 @@
 
             <div class="col-lg-4">
               <div class="form-group">
-                <label for="condition">Kondisi Barang</label>
+                <label for="condition">Kondisi Bahan</label>
                 <select class="custom-select" id="condition_create">
                   <option selected>Pilih</option>
                   <option value="1">Baik</option>
                   <option value="2">Kurang Baik</option>
-                  <option value="3">Rusak Ringan</option>
+                  <option value="3">Kadaluarsa</option>
                 </select>
               </div>
             </div>

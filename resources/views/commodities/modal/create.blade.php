@@ -83,7 +83,7 @@
                   <option selected>Pilih</option>
                   <option value="1">Baik</option>
                   <option value="2">Kurang Baik</option>
-                  <option value="3">Rusak Ringan</option>
+                  <option value="3">Rusak Berat</option>
                 </select>
               </div>
             </div>

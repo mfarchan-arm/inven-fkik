@@ -76,7 +76,7 @@ class Export implements FromCollection, WithHeadings, ShouldAutoSize
         } elseif ($commodity->condition === 2) {
             $condition = 'Kurang Baik';
         } else {
-            $condition = 'Rusak Berat';
+            $condition = 'Kadaluarsa';
         }
 
         return $condition;

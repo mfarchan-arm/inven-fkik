@@ -21,7 +21,7 @@
 
                         <div class="col-lg-6">
                             <div class="form-group">
-                                <label for="acquisition">Asal Barang</label>
+                                <label for="acquisition">Asal Bahan</label>
                                 <select class="custom-select" id="school_operational_assistance_id_edit">
                                     <option selected>Pilih</option>
                                     @foreach($school_operational_assistances as $school_operational_assistance)
@@ -79,12 +79,12 @@
 
                         <div class="col-lg-4">
                             <div class="form-group">
-                                <label for="condition_edit">Kondisi Barang</label>
+                                <label for="condition_edit">Kondisi Bahan</label>
                                 <select class="custom-select" id="condition_edit">
                                     <option selected>Pilih</option>
                                     <option value="1">Baik</option>
                                     <option value="2">Kurang Baik</option>
-                                    <option value="3">Rusak Berat</option>
+                                    <option value="3">Kadaluarsa</option>
                                 </select>
                             </div>
                         </div>

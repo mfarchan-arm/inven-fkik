@@ -68,7 +68,7 @@
               <th scope="row">{{ $loop->iteration }}</th>
               <td>{{ $material->item_code }}</td>
               <td>{{ Str::limit($material->name, 55, '...') }}</td>
-              <td>{{ $material->material_location->name}}</td>
+              <td>{{ $material->commodity_location->name}}</td>
               <td>{{ $material->quantity }}</td>
               @if($material->condition === 1)
               <td>

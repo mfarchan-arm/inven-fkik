@@ -18,13 +18,13 @@
             <li class="nav-item dropdown {{ Request::segment(2) === 'bahan' ? 'active' : '' }}">
                 <a href="{{ route('bahan.index') }}" class="nav-link"><i class="fas fa-columns"></i> <span>Data Bahan</span></a>
             </li>
-            <li class="nav-item dropdown {{ Request::segment(2) === 'vendor' ? 'active' : '' }}">
-                <a class="nav-link" href="{{ route('asal-barang.index') }}"><i class="far fa-square"></i> <span>Data Asal Barang</span></a>
+            <li class="nav-item dropdown {{ Request::segment(2) === 'asal-barang' ? 'active' : '' }}">
+                <a href="{{ route('asal-barang.index') }}" class="nav-link" ><i class="far fa-square"></i> <span>Data Asal Barang</span></a>
             </li>
             <li class="nav-item dropdown {{ Request::segment(2) === 'ruang' ? 'active' : '' }}">
                 <a href="{{ route('ruang.index') }}" class="nav-link"><i class="fas fa-th"></i> <span>Data Ruangan</span></a>
             </li>
-            <li class="nav-item dropdown {{ Request::segment(2) === 'pengunjung' ? 'active' : '' }}">
+            <li class="nav-item dropdown {{ Request::segment(2) === 'kunjungan' ? 'active' : '' }}">
                 <a href="{{ route('kunjungan.index') }}" class="nav-link"><i class="fas fa-person-booth"></i> <span>Data Kunjungan</span></a>
             </li>
         </ul>

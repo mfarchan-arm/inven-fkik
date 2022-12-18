@@ -54,7 +54,7 @@
           <table class="table">
             <tr>
               <td style="width: 145px;">
-                <b>Asal Barang</b>
+                <b>Asal Bahan</b>
               </td>
               <td style="width: 20px;">:</td>
               <td id="school_operational_assistance_id"></td>

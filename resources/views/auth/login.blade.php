@@ -60,8 +60,18 @@
                                 @enderror
                             </div>
 
-                            <a href="{{ route('pengunjung') }}">
-                                Absen Pengunjung</a>
+                            <div class="row">
+                                <div class="col">
+                                    <a href="/register">
+                                        Belum Punya Akun?</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <a href="{{ route('pengunjung') }}">
+                                        Absen Pengunjung</a>
+                                </div>
+                            </div>
 
                             <div class="form-group text-right">
                                 <button type="submit" class="btn btn-success btn-lg btn-icon icon-right"
